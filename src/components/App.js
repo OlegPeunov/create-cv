@@ -1,10 +1,13 @@
-import './App.css';
+import Header from './Header.js';
+import Content from './Content.js';
+import { Layout } from 'antd';
 
 function App() {
   return (
-    <div className="App ">
-      <header className="App-header"></header>
-    </div>
+    <Layout>
+      <Header />
+      <Content />
+    </Layout>
   );
 }
 
