@@ -2,6 +2,7 @@ import { Layout } from 'antd';
 const { Header } = Layout;
 
 function HeaderAnt() {
+  const projectName = 'Create-cv';
   return (
     <Header
       style={{
@@ -14,7 +15,7 @@ function HeaderAnt() {
         paddingLeft: 80,
       }}
     >
-      {'Create-CV'}
+      {projectName}
     </Header>
   );
 }

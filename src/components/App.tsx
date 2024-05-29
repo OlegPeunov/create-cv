@@ -1,5 +1,5 @@
-import Header from './Header.js';
-import Content from './Content.js';
+import Header from './Header.tsx';
+import Content from './Content.tsx';
 import { Layout } from 'antd';
 
 function App() {
