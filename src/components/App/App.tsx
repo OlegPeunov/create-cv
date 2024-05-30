@@ -1,13 +1,13 @@
+import FormPersonalInfo from '../Forms/PersonalInfo/PersonalInfo.tsx';
 import Header from '../Header/Header.tsx';
-import Content from '../Content.tsx';
-import { StyledLayout } from './App.styled';
+import * as S from './App.styled';
 
 function App() {
   return (
-    <StyledLayout>
+    <S.StyledLayout>
       <Header />
-      <Content />
-    </StyledLayout>
+      <FormPersonalInfo />
+    </S.StyledLayout>
   );
 }
 

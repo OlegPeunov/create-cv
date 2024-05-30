@@ -1,7 +1,7 @@
-import { StyledHeader } from './Header.styled';
+import * as S from './Header.styled';
 
 function HeaderAnt() {
-  return <StyledHeader>Create-cv</StyledHeader>;
+  return <S.StyledHeader>Create-cv</S.StyledHeader>;
 }
 
 export default HeaderAnt;

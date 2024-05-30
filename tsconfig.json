@@ -10,9 +10,9 @@
     "noImplicitAny": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "jsx": "preserve",
+    "jsx": "react-jsxdev",
     "allowImportingTsExtensions": true,
-    "noEmit": true  
+    "noEmit": true
   },
   "files": ["src/index.tsx"],
 }
