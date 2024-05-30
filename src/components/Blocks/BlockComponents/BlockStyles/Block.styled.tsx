@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { AutoComplete } from 'antd';
+import { AutoComplete, DatePicker } from 'antd';
 
 export const BlockTitle = styled.h2`
   font-size: 24px;
@@ -24,5 +24,9 @@ export const EntryTitle = styled.h3`
 
 export const StyledInput = styled(AutoComplete)`
   width: 100%;
+  margin-bottom: 20px;
+`;
+
+export const StyledDatePicker = styled(DatePicker)`
   margin-bottom: 20px;
 `;
