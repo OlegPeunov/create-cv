@@ -1,4 +1,4 @@
-import FormPersonalInfo from '../Forms/PersonalInfo/PersonalInfo.tsx';
+import FormPersonalInfo from '../Blocks/PersonalInfo/PersonalInfo.tsx';
 import Header from '../Header/Header.tsx';
 import * as S from './App.styled';
 
