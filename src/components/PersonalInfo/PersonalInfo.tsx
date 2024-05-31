@@ -1,4 +1,4 @@
-import * as S from '../BlockComponents/BlockStyles/Block.styled';
+import * as S from '../Block.styled';
 import { message, Upload } from 'antd';
 
 import { useState } from 'react';

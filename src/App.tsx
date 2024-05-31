@@ -1,5 +1,5 @@
-import FormPersonalInfo from '../Blocks/PersonalInfo/PersonalInfo.tsx';
-import Header from '../Header/Header.tsx';
+import FormPersonalInfo from './components/PersonalInfo/PersonalInfo.tsx';
+import Header from './components/Header/Header.tsx';
 import * as S from './App.styled';
 
 function App() {
