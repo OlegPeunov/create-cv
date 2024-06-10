@@ -1,4 +1,4 @@
-import * as S from '../Block.styled';
+import * as S from '../Card.styled';
 import { CardType } from '../types';
 
 function Card(props: CardType) {

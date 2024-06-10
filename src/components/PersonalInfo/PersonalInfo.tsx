@@ -1,5 +1,6 @@
-import * as S from '../Block.styled';
+import * as S from '../Card.styled';
 import Card from '../Card/Card';
+import InputBlock from '../InputBlock/InputBlock';
 import { Upload } from 'antd';
 
 import { useState } from 'react';
@@ -17,9 +18,6 @@ function FormPersonalInfo() {
   const [imageUrl, setImageUrl] = useState<string>();
 
   const handleChange: UploadProps['onChange'] = info => {
-    if (info.file.status === 'uploading') {
-      return;
-    }
     if (info.file.status === 'done') {
       // Get this url from response in real world.
       getBase64(info.file.originFileObj as FileType, url => {
@@ -36,12 +34,9 @@ function FormPersonalInfo() {
 
   return (
     <Card title="Персональная информация">
-      <S.EntryTitle>Фио</S.EntryTitle>
-      <S.StyledInput placeholder="Фио" />
-      <S.EntryTitle>Место жительства</S.EntryTitle>
-      <S.StyledInput placeholder="Место жительства" />
-      <S.EntryTitle>Номер телефона</S.EntryTitle>
-      <S.StyledInput placeholder="Номер телефона" />
+      <InputBlock title="Персональная информация"></InputBlock>
+      <InputBlock title="Место жительства"></InputBlock>
+      <InputBlock title="Номер телефона"></InputBlock>
       <S.EntryTitle>Дата рождения</S.EntryTitle>
       <S.StyledDatePicker placeholder="День рождения" />
       <Upload
@@ -49,7 +44,6 @@ function FormPersonalInfo() {
         listType="picture-card"
         className="avatar-uploader"
         showUploadList={false}
-        // action="https://660d2bd96ddfa2943b33731c.mockapi.io/api/upload"
         beforeUpload={() => false}
         onChange={handleChange}
       >
