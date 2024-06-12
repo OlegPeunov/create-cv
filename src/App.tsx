@@ -1,8 +1,8 @@
 import FormPersonalInfo from './components/PersonalInfo/PersonalInfo.tsx';
-import Header from './components/Header/Header.tsx';
-import * as S from './App.styled.tsx';
+import { Header } from './components/Header/Header.tsx';
+import * as S from './App.styled.ts';
 
-function App() {
+export function App() {
   return (
     <S.StyledLayout>
       <Header />
@@ -10,5 +10,3 @@ function App() {
     </S.StyledLayout>
   );
 }
-
-export default App;

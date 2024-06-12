@@ -1,7 +1,7 @@
 import * as S from './Card.styled';
 import { CardType } from '../types';
 
-function Card(props: CardType) {
+export function Card(props: CardType) {
   return (
     <>
       <S.BlockTitle>{props.title}</S.BlockTitle>
@@ -9,5 +9,3 @@ function Card(props: CardType) {
     </>
   );
 }
-
-export default Card;

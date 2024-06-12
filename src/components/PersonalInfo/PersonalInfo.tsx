@@ -1,6 +1,6 @@
 import * as S from './PersonalInfo.styled';
-import Card from '../Card/Card';
-import InputBlock from '../InputBlock/InputBlock';
+import { Card } from '../Card/Card';
+import { InputBlock } from '../InputBlock/InputBlock';
 import { Upload } from 'antd';
 
 import { useState } from 'react';
@@ -55,6 +55,6 @@ function FormPersonalInfo() {
       </Upload>
     </Card>
   );
-}
+};
 
 export default FormPersonalInfo;

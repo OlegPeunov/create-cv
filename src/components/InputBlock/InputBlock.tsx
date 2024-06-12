@@ -1,7 +1,7 @@
 import * as S from './InputBlock.styled';
 import { InputBlockType } from '../types';
 
-function InputBlock(props: InputBlockType) {
+export function InputBlock(props: InputBlockType) {
   return (
     <S.ContentInputHolder>
       <S.EntryTitle>{props.title}</S.EntryTitle>
@@ -9,5 +9,3 @@ function InputBlock(props: InputBlockType) {
     </S.ContentInputHolder>
   );
 }
-
-export default InputBlock;
