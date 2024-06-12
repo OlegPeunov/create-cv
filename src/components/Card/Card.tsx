@@ -1,5 +1,10 @@
+import { ReactNode } from 'react';
 import * as S from './Card.styled';
-import { CardType } from '../types';
+
+type CardType = {
+  title: string;
+  children?: ReactNode | undefined;
+};
 
 export const Card: React.FC<CardType> = props => {
   return (
@@ -9,4 +14,3 @@ export const Card: React.FC<CardType> = props => {
     </>
   );
 };
-

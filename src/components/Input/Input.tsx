@@ -1,5 +1,10 @@
+import { ReactNode } from 'react';
 import * as S from './Input.styled';
-import { InputType } from '../types';
+
+export type InputType = {
+  title: string;
+  children?: ReactNode | undefined;
+};
 
 export const Input: React.FC<InputType> = props => {
   return (
