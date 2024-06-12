@@ -1,7 +1,8 @@
 import * as S from './PersonalInfo.styled';
 import { Card } from '../Card/Card';
-import { Input } from '../Input/Input';
-import { Upload } from 'antd';
+import { FormItem } from '../CardItem/CardItem';
+import { StyledInput } from '../Input/Input.styled';
+import { Upload, DatePicker } from 'antd';
 
 import { useState } from 'react';
 import type { GetProp, UploadProps } from 'antd';
@@ -34,11 +35,18 @@ export const FormPersonalInfo = () => {
 
   return (
     <Card title="Персональная информация">
-      <Input title="Персональная информация" />
-      <Input title="Место жительства" />
-      <Input title="Номер телефона" />
-      <S.EntryTitle>Дата рождения</S.EntryTitle>
-      <S.StyledDatePicker placeholder="День рождения" />
+      <FormItem title="Персональная информация">
+        <StyledInput placeholder="Персональная информация" />
+      </FormItem>
+      <FormItem title="Место жительства">
+        <StyledInput placeholder="Место жительства" />
+      </FormItem>
+      <FormItem title="Номер телефона">
+        <StyledInput placeholder="Номер телефона" />
+      </FormItem>
+      <FormItem title="Дата рождения">
+        <DatePicker placeholder="День рождения" />
+      </FormItem>
       <Upload
         name="avatar"
         listType="picture-card"
