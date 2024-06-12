@@ -12,3 +12,12 @@ export const EntryTitle = styled.h3`
 export const StyledDatePicker = styled(DatePicker)`
   margin-bottom: 20px;
 `;
+
+export const ButtonUpload = styled.button`
+  margin-bottom: 20px;
+  border: 0;
+  background: 'none';
+`;
+export const ButtonText = styled.div`
+  margin-top: 8;
+`;

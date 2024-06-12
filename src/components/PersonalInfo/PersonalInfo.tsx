@@ -27,9 +27,9 @@ export const FormPersonalInfo = () => {
   };
 
   const uploadButton = (
-    <button style={{ border: 0, background: 'none' }} type="button">
-      <div style={{ marginTop: 8 }}>Выберите ваш аватар</div>
-    </button>
+    <S.ButtonUpload type="button">
+      <S.ButtonText>Выберите ваш аватар</S.ButtonText>
+    </S.ButtonUpload>
   );
 
   return (
