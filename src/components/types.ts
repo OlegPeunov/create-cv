@@ -5,7 +5,7 @@ export type CardType = {
   children?: ReactNode | undefined;
 };
 
-export type InputBlockType = {
+export type InputType = {
   title: string;
   children?: ReactNode | undefined;
 };

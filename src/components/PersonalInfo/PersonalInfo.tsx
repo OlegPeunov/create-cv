@@ -1,6 +1,6 @@
 import * as S from './PersonalInfo.styled';
 import { Card } from '../Card/Card';
-import { InputBlock } from '../InputBlock/InputBlock';
+import { Input } from '../Input/Input';
 import { Upload } from 'antd';
 
 import { useState } from 'react';
@@ -14,7 +14,7 @@ const getBase64 = (img: FileType, callback: (url: string) => void) => {
   reader.readAsDataURL(img);
 };
 
-function FormPersonalInfo() {
+export const FormPersonalInfo = () => {
   const [imageUrl, setImageUrl] = useState<string>();
 
   const handleChange: UploadProps['onChange'] = info => {
@@ -34,9 +34,9 @@ function FormPersonalInfo() {
 
   return (
     <Card title="Персональная информация">
-      <InputBlock title="Персональная информация"></InputBlock>
-      <InputBlock title="Место жительства"></InputBlock>
-      <InputBlock title="Номер телефона"></InputBlock>
+      <Input title="Персональная информация" />
+      <Input title="Место жительства" />
+      <Input title="Номер телефона" />
       <S.EntryTitle>Дата рождения</S.EntryTitle>
       <S.StyledDatePicker placeholder="День рождения" />
       <Upload
@@ -56,5 +56,3 @@ function FormPersonalInfo() {
     </Card>
   );
 };
-
-export default FormPersonalInfo;

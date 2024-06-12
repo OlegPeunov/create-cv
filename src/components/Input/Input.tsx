@@ -1,11 +1,11 @@
-import * as S from './InputBlock.styled';
-import { InputBlockType } from '../types';
+import * as S from './Input.styled';
+import { InputType } from '../types';
 
-export function InputBlock(props: InputBlockType) {
+export const Input: React.FC<InputType> = props => {
   return (
     <S.ContentInputHolder>
       <S.EntryTitle>{props.title}</S.EntryTitle>
       <S.StyledInput placeholder={props.title} />
     </S.ContentInputHolder>
   );
-}
+};
