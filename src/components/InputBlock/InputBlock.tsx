@@ -1,4 +1,4 @@
-import * as S from '../Card.styled';
+import * as S from './InputBlock.styled';
 import { InputBlockType } from '../types';
 
 function InputBlock(props: InputBlockType) {

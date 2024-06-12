@@ -1,4 +1,4 @@
-import * as S from '../Card.styled';
+import * as S from './PersonalInfo.styled';
 import Card from '../Card/Card';
 import InputBlock from '../InputBlock/InputBlock';
 import { Upload } from 'antd';
