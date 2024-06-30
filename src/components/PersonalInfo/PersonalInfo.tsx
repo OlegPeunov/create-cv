@@ -16,20 +16,22 @@ const getBase64 = (img: FileType, callback: (url: string) => void) => {
 };
 
 export const FormPersonalInfo = () => {
-  const [imageUrl, setImageUrl] = useState<string>();
+  const [previewImage, setPreviewImage] = useState<string>('');
 
-  const handleChange: UploadProps['onChange'] = info => {
-    if (info.file.status === 'done') {
-      // Get this url from response in real world.
-      getBase64(info.file.originFileObj as FileType, url => {
-        setImageUrl(url);
-      });
-    }
+  const handleChange: UploadProps['onChange'] = async info => {
+    getBase64(info.file as FileType, url => {
+      setPreviewImage(url);
+    });
   };
 
   const uploadButton = (
     <S.ButtonUpload type="button">
-      <S.ButtonText>Выберите ваш аватар</S.ButtonText>
+      {previewImage === '' ? (
+        <S.ButtonText>Выберите ваш аватар</S.ButtonText>
+      ) : (
+        (console.log(previewImage),
+        (<S.AvatarPreview src={previewImage} alt="your avatar" />))
+      )}
     </S.ButtonUpload>
   );
 
@@ -55,11 +57,7 @@ export const FormPersonalInfo = () => {
         beforeUpload={() => false}
         onChange={handleChange}
       >
-        {imageUrl ? (
-          <img src={imageUrl} alt="avatar" style={{ width: '100%' }} />
-        ) : (
-          uploadButton
-        )}
+        {uploadButton}
       </Upload>
     </Card>
   );
