@@ -1,7 +1,7 @@
 import * as S from './PersonalInfo.styled';
 import { Card } from '../Card/Card';
-import { FormItem } from '../CardItem/CardItem';
-import { StyledInput } from '../Input/Input.styled';
+import { FormItem } from '../FormItem/FormItem';
+import { Input } from '../Input/Input';
 import { Upload, DatePicker } from 'antd';
 
 import { useState } from 'react';
@@ -36,13 +36,13 @@ export const FormPersonalInfo = () => {
   return (
     <Card title="Персональная информация">
       <FormItem title="Персональная информация">
-        <StyledInput placeholder="Персональная информация" />
+        <Input placeholder="Персональная информация" />
       </FormItem>
       <FormItem title="Место жительства">
-        <StyledInput placeholder="Место жительства" />
+        <Input placeholder="Место жительства" />
       </FormItem>
       <FormItem title="Номер телефона">
-        <StyledInput placeholder="Номер телефона" />
+        <Input placeholder="Номер телефона" />
       </FormItem>
       <FormItem title="Дата рождения">
         <DatePicker placeholder="День рождения" />

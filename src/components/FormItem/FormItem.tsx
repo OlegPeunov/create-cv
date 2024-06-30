@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import * as S from './CardItem.styled';
+import * as S from './FormItem.styled';
 
 export type FormItemType = {
   title: string;
